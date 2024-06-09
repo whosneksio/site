@@ -12,9 +12,16 @@ export const metadata: Metadata & { url: URL } = {
   url: new URL('https://resonance.rest/'), 
   openGraph: {
     title: 'resonance.rest',
+    siteName: 'resonance.rest',
     description: 'Discover a range of innovative tools designed to enhance your experience with Wuthering Waves. Our projects are open-source, fostering collaboration and community-driven development.',
     url: 'https://resonance.rest/',
-    images: 'https://cdn.resonance.rest/icon.png',
+    images: [
+      {
+        url: 'https://cdn.resonance.rest/logo.png',
+        width: 256,
+        height: 256,
+      },
+    ]
   },
 };
 
