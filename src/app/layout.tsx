@@ -16,13 +16,6 @@ export const metadata: Metadata & { url: URL } = {
     siteName: 'resonance.rest',
     description: 'Discover a range of innovative tools designed to enhance your experience with Wuthering Waves. Our projects are open-source, fostering collaboration and community-driven development.',
     url: 'https://resonance.rest/',
-    images: [
-      {
-        url: 'https://cdn.resonance.rest/logo.png',
-        width: 64,
-        height: 64,
-      },
-    ]
   },
 };
 
