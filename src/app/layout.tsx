@@ -9,6 +9,7 @@ export const metadata: Metadata & { url: URL } = {
   title: 'resonance.rest',
   description: 'Discover a range of innovative tools designed to enhance your experience with Wuthering Waves. Our projects are open-source, fostering collaboration and community-driven development.',
   keywords: 'resonance, rest, api, image, avatar, generation, simple, fast, reliable, ww, wuthering waves, wuwa, wuthering, wutheringwwaves, waves, wuwaapi, wwapi, icon, api, wuthering waves fps unlocker, fps unlocker, fps, fps unlock, wuthering waves rpc, wuthering waves discord rich presence, rpc, discord rich presence',
+  themeColor: '#D86A59',
   url: new URL('https://resonance.rest/'), 
   openGraph: {
     title: 'resonance.rest',
@@ -18,8 +19,8 @@ export const metadata: Metadata & { url: URL } = {
     images: [
       {
         url: 'https://cdn.resonance.rest/logo.png',
-        width: 256,
-        height: 256,
+        width: 64,
+        height: 64,
       },
     ]
   },
