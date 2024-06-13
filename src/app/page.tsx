@@ -18,7 +18,7 @@ export default function Home() {
           </a>
         </li>
         <li className="mt-2">
-          <a href="https://github.com/resonance-rest/fps" className="hover:text-zinc-400 transition-colors duration-300 inline-flex items-center" target="_blank">
+          <a href="https://api.resonance.rest/" className="hover:text-zinc-400 transition-colors duration-300 inline-flex items-center" target="_blank">
             Rest API for Wuthering Waves
           </a>
         </li>
