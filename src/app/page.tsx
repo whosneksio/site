@@ -8,11 +8,6 @@ export default function Home() {
       </p>
       <ul className="mt-4 text-zinc-300 text-center text-lg">
         <li className="mt-2">
-          <a href="https://t.me/wutheringwavesleaksnews" className="hover:text-zinc-400 transition-colors duration-300 inline-flex items-center" target="_blank">
-            Wuthering Waves leaks/news Telegram channel
-          </a>
-        </li>
-        <li className="mt-2">
           <a href="https://github.com/resonance-rest" className="hover:text-zinc-400 transition-colors duration-300 inline-flex items-center" target="_blank">
             GitHub organization with various tools
           </a>
