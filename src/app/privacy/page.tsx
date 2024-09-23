@@ -7,9 +7,7 @@ export default function Home() {
             "linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('https://cdn.resonance.rest/bg.png')",
         }}
       >
-        {/* Container for logo and title */}
         <div className="flex items-center space-x-4 mt-6">
-          {/* Smaller Logo */}
           <img
             src="https://cdn.resonance.rest/logo.png"
             width="80"
@@ -19,9 +17,7 @@ export default function Home() {
           />
         </div>
   
-        {/* Privacy Policy Content */}
         <section className="mt-8 max-w-2xl text-sm leading-relaxed sm:text-base">
-          {/* Usage of Data */}
           <h3 className="text-lg font-semibold text-white mb-4">
             Usage of Data
           </h3>
@@ -34,7 +30,6 @@ export default function Home() {
             will not be shared with any third-party site or service.
           </p>
   
-          {/* Stored Information */}
           <h3 className="text-lg font-semibold text-white mt-6 mb-4">
             Stored Information
           </h3>
@@ -51,7 +46,6 @@ export default function Home() {
             </li>
           </ul>
   
-          {/* Updating Data */}
           <h3 className="text-lg font-semibold text-white mt-6 mb-4">
             Updating Data
           </h3>
@@ -62,7 +56,6 @@ export default function Home() {
             for their intended purposes.
           </p>
   
-          {/* Temporarily Stored Information */}
           <h3 className="text-lg font-semibold text-white mt-6 mb-4">
             Temporarily Stored Information
           </h3>
@@ -73,12 +66,10 @@ export default function Home() {
             the bot from a server or ceasing use of the website.
           </p>
   
-          {/* Removal of Data */}
           <h3 className="text-lg font-semibold text-white mt-6 mb-4">
             Removal of Data
           </h3>
   
-          {/* Automatic Removal */}
           <h4 className="text-gray-300 font-semibold text-white mt-4">
             Automatic Removal
           </h4>
@@ -88,7 +79,6 @@ export default function Home() {
             standard server or account management options.
           </p>
   
-          {/* Manual Removal */}
           <h4 className="text-gray-300 font-semibold text-white mt-4">
             Manual Removal
           </h4>
