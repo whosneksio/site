@@ -38,7 +38,7 @@ export default function Home() {
           </p>
           <ul className="list-disc list-inside text-zinc-400">
             <li>
-              <code>id</code> — the server’s or user’s unique ID.
+              <code>id</code> — the server's or user's unique ID.
             </li>
             <li>
               <code>convene data</code> — user or server convene data for
