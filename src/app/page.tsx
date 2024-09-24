@@ -1,7 +1,7 @@
-"use client";
+"use client"
 
-import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
+import { useEffect, useState } from "react"
+import { motion } from "framer-motion"
 
 const LoadingCircle = () => (
   <motion.div
@@ -10,27 +10,27 @@ const LoadingCircle = () => (
     animate={{ rotate: 360 }}
     transition={{ duration: 1, repeat: Infinity }}
   />
-);
+)
 
 export default function Home() {
-  const [apiStatus, setApiStatus] = useState(false);
-  const [loading, setLoading] = useState(true);
+  const [apiStatus, setApiStatus] = useState(false)
+  const [loading, setLoading] = useState(true)
 
   useEffect(() => {
     const checkApiStatus = async () => {
       try {
-        const response = await fetch("https://api.resonance.rest/");
-        setApiStatus(response.ok);
+        const response = await fetch("https://api.resonance.rest/")
+        setApiStatus(response.ok)
       } catch (error) {
-        console.error("Error checking API status:", error);
-        setApiStatus(false);
+        console.error("Error checking API status:", error)
+        setApiStatus(false)
       } finally {
-        setLoading(false);
+        setLoading(false)
       }
-    };
+    }
 
-    checkApiStatus();
-  }, []);
+    checkApiStatus()
+  }, [])
 
   return (
     <div
@@ -42,12 +42,12 @@ export default function Home() {
     >
       <div className="absolute top-0 left-0 w-full bg-[#d86a59] text-white p-2 flex justify-center items-center z-50 text-sm sm:text-base">
         <span>
-          🎉 We have released a new bot for Discord! Click to add it:{" "}
+          We have released a new bot for Discord,{" "}
           <a
             href="https://discord.com/oauth2/authorize?client_id=1274075579666399252&permissions=274878253056&integration_type=0&scope=bot+applications.commands"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-black font-semibold"
+            className="text-[#060506] font-semibold hover:text-[#3a303a] transition duration-300"
           >
             add bot
           </a>
@@ -56,7 +56,7 @@ export default function Home() {
 
       <div className="flex justify-center space-x-4 mt-20">
         <button
-          className="backdrop-blur-lg px-3 py-2 text-lg text-zinc-50 bg-white bg-opacity-5 rounded-lg hover:bg-opacity-10 transition duration-300"
+          className="px-4 py-2 text-lg text-zinc-50 bg-white bg-opacity-10 rounded-lg backdrop-blur-lg"
           onClick={() =>
             window.open(
               "https://discord.com/oauth2/authorize?client_id=1274075579666399252&permissions=274878253056&integration_type=0&scope=bot+applications.commands",
@@ -92,8 +92,8 @@ export default function Home() {
         </p>
       </div>
 
-      <ul className="mt-4 text-center">
-        <li className="mt-2">
+      <ul className="mt-4 text-center space-y-4">
+        <li>
           <button
             onClick={() =>
               window.open(
@@ -101,28 +101,28 @@ export default function Home() {
                 "_blank"
               )
             }
-            className="border border-zinc-700 px-4 py-2 text-lg text-zinc-50 bg-white bg-opacity-5 rounded-lg backdrop-blur-lg hover:bg-opacity-10 transition duration-300 hover:border-[#d86a59]"
+            className="w-full sm:w-auto px-6 py-3 text-lg text-zinc-50 bg-[#d86a59] bg-opacity-80 rounded-lg backdrop-blur-lg hover:bg-opacity-100 transition duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
           >
             Changli - Discord bot for Wuthering Waves
           </button>
         </li>
-        <li className="mt-2">
+        <li>
           <button
             onClick={() => window.open("https://github.com/resonance-rest", "_blank")}
-            className="px-4 py-2 text-lg text-zinc-50 bg-white bg-opacity-5 rounded-lg backdrop-blur-lg hover:bg-opacity-10 transition duration-300"
+            className="w-full sm:w-auto px-6 py-3 text-lg text-zinc-50 bg-white bg-opacity-10 rounded-lg backdrop-blur-lg hover:bg-opacity-20 transition duration-300 border border-zinc-600 hover:border-[#d86a59] shadow-lg hover:shadow-xl transform hover:-translate-y-1"
           >
             GitHub organization with various tools
           </button>
         </li>
-        <li className="mt-2">
+        <li>
           <button
             onClick={() => window.open("https://api.resonance.rest/", "_blank")}
-            className="px-4 py-2 text-lg text-zinc-50 bg-white bg-opacity-5 rounded-lg backdrop-blur-lg hover:bg-opacity-10 transition duration-300"
+            className="w-full sm:w-auto px-6 py-3 text-lg text-zinc-50 bg-white bg-opacity-10 rounded-lg backdrop-blur-lg hover:bg-opacity-20 transition duration-300 border border-zinc-600 hover:border-[#d86a59] shadow-lg hover:shadow-xl transform hover:-translate-y-1"
           >
             Rest API for Wuthering Waves
           </button>
         </li>
       </ul>
     </div>
-  );
+  )
 }
